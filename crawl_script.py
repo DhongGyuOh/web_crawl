@@ -10,7 +10,7 @@ titles = soup.select("strong.tit_post")
 for t in titles:
     print(t.get_text(strip=True))
     
-cates = soup.select("a.link_cate")
+cates = soup.select("a.link_cate").attrs['date']
 for c in cates:
     print(c.get_text(strip=True))
 
