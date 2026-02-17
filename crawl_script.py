@@ -36,6 +36,28 @@ with sync_playwright() as p:
 
     browser.close()
 
+    previous_height = 0
+
+# 끝까지 스크롤하기
+# while True:
+#     # 현재 높이 가져오기
+#     current_height = page.evaluate("document.body.scrollHeight")
+
+#     # 더 이상 증가 안 하면 종료
+#     if current_height == previous_height:
+#         break
+
+#     # 맨 아래로 스크롤
+#     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+
+#     # 로딩 대기
+#     page.wait_for_timeout(1500)
+
+#     previous_height = current_height
+
+# print("스크롤 완료")
+
+
 
 
 
